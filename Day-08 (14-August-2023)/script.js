@@ -1,0 +1,1 @@
+// In today's work and learning journey i have just revised all my previous concepts of Java Script and make it sure to practice all previous things to make a strong grip on all previous topics along with the advanced topics
