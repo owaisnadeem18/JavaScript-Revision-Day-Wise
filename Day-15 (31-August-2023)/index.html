@@ -1,0 +1,42 @@
+<!-- DOM Manipulation :-  -->
+
+<!-- DOM vs Windows -->
+<!-- Windows has the access of DOM (documents) while DOM (documents) do not have the access of windows -->
+<!-- Windows are a giant big box , while DOM (Document Objct Model) is a small box which is presnet inside the windows -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      body {
+        background-color: rgb(137, 137, 234);
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* height: 100vh; */
+        margin: 10px;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      .btn h1 {
+        width: 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn" onclick="goBack()">
+      <h1>Go Back</h1>
+    </button>
+  </body>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</html>
