@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+        color: white;
+      }
+      h1 {
+        margin: 27px;
+        background-color: black;
+        /* display: inline; */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Different Events In JavaScript</h1>
+      <div class="button_container">
+        <div class="button_su">
+          <span class="su_button_circle"> </span>
+          <a href="#" class="button_su_inner" onclick="alert('I am Awesome')">
+            <span class="button_text_container"> Simple Inline Alert() </span>
+          </a>
+          <p>I am the 1st way of provoking or calling events in JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Fire an event in JavaScript methods: -->
+<!-- The benifit of addEvent Listener is this that you can call same event multiple times -->
+
+<!-- While, onClick has the limitation that it just performs the top most or the above written task -->

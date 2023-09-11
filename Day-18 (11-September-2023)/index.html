@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Understanding</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: black;
+      }
+
+      p {
+        margin: 30px 68px 68px 68px;
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+        margin: 68px;
+      }
+      button {
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        background-color: rebeccapurple;
+        height: 56px;
+        text-align: center;
+        display: block; /* Set it as a block-level element */
+        margin: 0 auto; /* Center horizontally */
+        margin-top: 20px;
+        /* Add some top margin for spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="naam">My Name is Owais Nadeem</p>
+    <p class="naam">I am a Front End Web Developer</p>
+
+    <h3 id="heading">About me</h3>
+
+    <button onclick="changeContent()">Click to read my intro:</button>
+    <script>
+      const changeContent = () => {
+        // document.getElementById("heading").innerHTML =
+        //   "I'm an Undergraduate BSCS student of Dawood UET Karachi ";
+
+        // You can also achieve the same functionality using the following code
+
+        // document.querySelector("#heading").innerHTML = "I am also learning AI";
+        // document.querySelector(".naam").innerHTML = "I am also learning AI";
+        console.log(document.querySelectorAll(".naam")) = "I am also learning AI";
+      };
+    </script>
+  </body>
+</html>
