@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events_In_JavaScript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 0, 24);
+        color: white;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container h1 {
+        margin: 4rem 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 4rem;
+        background-color: #d4ff00;
+        color: black;
+        padding: 4rem;
+        align-items: center;
+      }
+      .box {
+        background-color: rgb(250, 0, 0);
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        height: 25vh;
+        padding: 45px;
+        margin: 45px;
+        width: 14vw;
+      }
+
+      .box:hover {
+        background-color: yellow;
+        color: black;
+        transition: all 0.4s linear;
+      }
+      .container button {
+        border: 1px solid black;
+        height: 5rem;
+        font-size: 2rem;
+        border-radius: 4rem;
+        width: 15rem;
+        background-color: white;
+        color: black;
+        margin: 4rem 0;
+      }
+
+      .container button:hover {
+        background-color: rgb(255, 230, 0);
+        transition: all 0.5s linear;
+        color: rgb(0, 0, 0);
+        font-size: 2.2rem;
+        font-weight: 900;
+        width: 19rem;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 1320px) {
+        .box {
+          height: 25vh;
+          font-size: 2rem;
+          width: 12rem;
+        }
+
+        .container button:hover {
+          font-size: 1.8rem;
+          width: 12rem;
+        }
+      }
+      @media screen and (max-width: 725px) {
+        .box {
+          height: 35vh;
+          width: 10rem;
+          font-size: 2.3rem;
+        }
+        .container button {
+          border: 1px solid black;
+          height: 5rem;
+          font-size: 1.5rem;
+          border-radius: 4rem;
+          width: 10rem;
+          font-weight: 900;
+        }
+
+        .container button:hover {
+          font-size: 1.8rem;
+          width: 12rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-heading">
+        <h1>Events In JavaScript</h1>
+      </div>
+      <div
+        onclick="alert('I am First Way of Including Handlers in JavaScript')"
+        class="box"
+      >
+        I am First Way of Including Handlers in JavaScript
+      </div>
+      <div class="box" onclick="SecondWay()">
+        I am second Way of Including Handlers in JavaScript
+      </div>
+      <div id="thirdWay" class="box">
+        I am third Way of Including Handlers in JavaScript
+      </div>
+      <div id="FourthWay" class="box">
+        I am Fourth Way of Including Handlers in JavaScript
+      </div>
+      <button class="btn" onclick="ChangeText()">Click Me</button>
+    </div>
+
+    <script src="Events_In_JavaScript.js"></script>
+  </body>
+</html>
