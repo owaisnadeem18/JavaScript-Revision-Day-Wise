@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Based Functions In JavaScript SetTimeOut()</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34rem;
+        flex-direction: column;
+      }
+      .container button {
+        border: 1px solid rgb(29, 30, 29);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        width: 13rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin: 1rem;
+      }
+
+      .container button:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+
+        font-size: 1.3rem;
+        width: 14rem;
+        transition: all 0.3s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Here is the content, in main heading</h1>
+      <p class="para"></p>
+      <button
+        onclick="myVar = setTimeout(myFunction , 4000)"
+        id="first"
+        class="btn"
+      >
+        Click On Me to Start Time Out
+      </button>
+      <button id="second" onclick="clearTimeout(myVar)" class="btn">
+        Click on me to clear Time Out
+      </button>
+    </div>
+
+    <script>
+      function myFunction() {
+        alert("hello");
+      }
+    </script>
+  </body>
+</html>
