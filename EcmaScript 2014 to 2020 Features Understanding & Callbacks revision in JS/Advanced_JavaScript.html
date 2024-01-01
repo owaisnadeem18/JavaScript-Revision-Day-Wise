@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling & Event Capturing</title>
+    <style>
+      #parent-div {
+        border: 5px solid red;
+        height: 45vh;
+        width: 22.5vw;
+        margin: 34px auto;
+        display: flex;
+        align-items: center;
+        background-color: chartreuse;
+        justify-content: center;
+      }
+      #child-div {
+        border: 4px solid black;
+        height: 25vh;
+        width: 12vw;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent-div">
+      <div id="child-div"></div>
+    </div>
+
+    <script src="Advanced_JavaScript.js"></script>
+  </body>
+</html>
