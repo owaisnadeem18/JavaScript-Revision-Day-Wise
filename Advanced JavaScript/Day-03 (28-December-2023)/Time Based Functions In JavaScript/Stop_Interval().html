@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Based Functions In JavaScript SetTimeOut()</title>
+    <style>
+      body {
+        background-color: gray;
+      }
+      .container {
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34rem;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        color: rgb(64, 255, 0);
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container button {
+        border: 1px solid rgb(29, 30, 29);
+        border-radius: 0.5rem;
+        padding: 2rem;
+        font-weight: 800;
+        width: 22rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin: 1rem;
+        background: rgb(208, 255, 0);
+      }
+
+      .container button:hover {
+        background: rgb(30, 255, 0);
+        color: rgb(0, 0, 0);
+
+        font-size: 1.4rem;
+        font-weight: 900;
+        width: 26rem;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .reset {
+        display: none;
+      }
+      .pause {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Hey User !!! , Your Count Down will get started after you clicking on
+        the button
+      </h1>
+      <p class="para"></p>
+
+      <div class="button-classes">
+        <button id="first" class="btn">Click to Start Count Down</button>
+        <button id="second" class="btn pause">Click to Pause Count Down</button>
+        <button id="third" class="btn reset">Click to Reset Count Down</button>
+      </div>
+    </div>
+
+    <script>
+      let StartCountDown = document.querySelector("h1");
+      let btn = document.getElementById("first");
+      let Reset_Btn = document.getElementById("third");
+      let num = 0;
+      let TimeRef;
+      let Stop_Btn = document.getElementById("second");
+      let paragraph = document.querySelector(".para");
+
+      const Show_Number = () => {
+        StartCountDown.innerHTML = "Loading...";
+        TimeRef = setInterval(() => {
+          StartCountDown.innerHTML = `${num}`;
+          num++;
+        }, 1000);
+        btn.style.display = "none";
+        Stop_Btn.style.display = "inline-block";
+        Reset_Btn.style.display = "inline-block";
+        paragraph.innerHTML = "";
+      };
+
+      btn.addEventListener("click", Show_Number);
+
+      Stop_Btn.addEventListener("click", () => {
+        clearInterval(TimeRef);
+        paragraph.innerHTML =
+          "!!! CountDown has been paused , click on recontinue to run it !!!";
+
+        btn.style.display = "inline-block";
+        btn.innerHTML = "Click to Recontinue !";
+        Stop_Btn.style.display = "none";
+      });
+
+      Reset_Btn.addEventListener("click", () => {
+        num = 0;
+        alert("Count Down has been reseted");
+
+        StartCountDown.innerHTML.setTimeout(() => {
+          num = `${num}`;
+          num++;
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
