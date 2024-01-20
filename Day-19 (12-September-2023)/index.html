@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        background-color: black;
+        color: white;
+        height: 200px;
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Event Object : We have an Event Object , which is considered as the event parent object of the event object
+For Example : Mouse Event , Keyboard event e.t.c -->
+
+    <!-- Now we have to discuss about mouseEvents -->
+    <div class="box" onclick="func()">Click on me</div>
+    <div class="box" ondblclick="func2()">Double Click on me</div>
+
+    <script>
+      const func = () => {
+        alert("You have clicked me ");
+      };
+
+      const func2 = () => {
+        alert("You have double clicked on me");
+      };
+    </script>
+  </body>
+</html>
