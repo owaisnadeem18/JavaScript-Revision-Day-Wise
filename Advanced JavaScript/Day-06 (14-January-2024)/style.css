@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgb(31, 31, 31);
+  width: 95vw;
+  margin: 3rem auto;
+  padding: 1rem;
+  /* opacity: 0.9; */
+}
+
+.container .text-div {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.container .text-div .img img {
+  position: fixed;
+  top: 4rem;
+  right: 30rem;
+  left: 6rem;
+  height: 4rem;
+}
+
+.text-div h3 {
+  text-align: center;
+  width: 40vw;
+  margin: auto;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+.text-div h1 {
+  color: white;
+  width: 24vw;
+  text-align: center;
+  margin: auto;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  z-index: 1000;
+}
+
+.text-div h1 span {
+  display: block;
+  font-size: 2rem;
+  margin: -0.4rem;
+}
+
+.pargraphs-div {
+  background-size: 30rem;
+}
+
+.text-div p {
+  width: 91vw;
+  margin: auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+
+.text-div hr {
+  width: 85vw;
+  margin: auto;
+  color: black;
+}
