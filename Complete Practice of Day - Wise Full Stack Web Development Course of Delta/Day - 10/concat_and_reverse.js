@@ -12,4 +12,4 @@ console.log(concat_arr);
 // Here we have to discuss reverse method of array:
 
 console.log(arr1);
-console.log(arr1.reverse()); // here we have reversed our array
+console.log(arr1.reverse()); // here we have reversed our array. keep in mind that we have also modified our original array
