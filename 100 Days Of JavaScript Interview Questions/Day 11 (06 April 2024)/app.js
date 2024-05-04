@@ -20,14 +20,14 @@
 
 // 2nd Method of Solving the question using reduce method of array
 
-let num = 45921;
+// let num = 45921;
 
-let numb;
+// let numb;
 
-let SumOfDigits = (number) => {
-  let arr = Array.from(String(number), Number);
-  arr = arr.reduce((a, b) => (a += b), 0);
-  return arr;
-};
+// let SumOfDigits = (number) => {
+//   let arr = Array.from(String(number), Number);
+//   arr = arr.reduce((a, b) => (a += b), 0);
+//   return arr;
+// };
 
-console.log(`The sum of digits ${45921} is = ${SumOfDigits(num)}`);
+// console.log(`The sum of digits ${45921} is = ${SumOfDigits(num)}`);
