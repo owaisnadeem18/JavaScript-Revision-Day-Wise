@@ -33,4 +33,29 @@ by default modules.exports is an object
 
 # Video 08
 
+- What if we want to import the whole directory i.e the entire folder
 
+# Video 09
+
+What is NPM ?
+
+- Library of Packages
+- Command Line tool 
+
+# Video 10 & 11
+
+- Installation of packages
+- Installing Figlet and printing the name of the user
+
+# Video 12 
+
+Package.json:
+
+- It is a file inside our code which keeps the meta data about our project
+
+
+# Video 13 
+
+Import & Export in our Backend 
+
+require vs import
