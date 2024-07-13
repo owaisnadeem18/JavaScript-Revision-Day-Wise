@@ -1,0 +1,34 @@
+<%- include("Includes/head.ejs") %>
+
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <h2><%= 13 + 2 %></h2>
+
+    <h4>Dice Number is = <%= data %></h4>
+
+    <!-- Here we are going to study about Conduitional statements in JavaScript -->
+
+    <% if (data == 6) { %>
+    <h2>Nice ! Roll Dice Again</h2>
+    <% } %>
+
+    <!-- here I have embeded EJS tag , which will display JS logics and data in our file -->
+
+    <!-- We use this way and technique , for the purpose of displaying our data base data in our file -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      quaerat eveniet aspernatur itaque minus similique, dolores illo. Sit,
+      tenetur blanditiis dolorum quis alias maiores corporis quisquam!
+      Consequuntur aut aperiam fugit totam reiciendis, numquam rem sequi, at
+      dicta, unde impedit explicabo debitis expedita esse dolore non voluptas
+      minima eligendi doloremque! Tenetur nesciunt incidunt expedita!
+    </p>
+    <button>Click me</button>
+
+
+    <%- include("Includes/footer.ejs") %>
+  </body>
+</html>

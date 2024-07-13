@@ -1,0 +1,42 @@
+
+<%- include("Includes/head.ejs") %>
+
+  <body>
+    <div class="logo">
+      <img
+        src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png"
+        alt=""
+      />
+      <h1>Instagram</h1>
+    </div>
+
+    <h2>Insta Account of : @<%= InstaUserName_Data.name %></h2>
+
+    <button>Follow</button>
+    <button>message</button>
+
+    <p>
+      Followers : <b> <%= InstaUserName_Data.followers %> </b> &nbsp; Following
+      : <b> <%= InstaUserName_Data.following %> </b>
+    </p>
+
+    <hr />
+
+    <h3>
+      Posts by <%= InstaUserName_Data.name.charAt(0).toUpperCase() +
+      InstaUserName_Data.name.slice(1).toLowerCase() %>
+    </h3>
+
+    <% for (let post of InstaUserName_Data.posts) { %>
+    <img src="<%= post.image %>" alt="some img" />
+
+    <p>
+      Likes : <b> <%= post.likes %> </b> &nbsp; Comments :
+      <b> <%= post.comments %> </b>
+    </p>
+
+    <% } %>
+
+    <!-- Now , we have to study about the looping method in EJS -->
+  </body>
+</html>
