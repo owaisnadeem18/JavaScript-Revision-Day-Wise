@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Your Post</title>
+  </head>
+  <body>
+    <h1>Edit Your Post</h1>
+
+    <h2>Post Id : <%= post.id %></h2>
+
+    <h2>User : <%= post.name %></h2>
+
+    <p>
+      You can edit your post and then , you can update it using this edit button
+    </p>
+
+    <form method="post" action="/posts/<% post.id %>?_method=PATCH">
+      <textarea name="" id="">
+            <%= post.Field %>
+            </textarea
+      >
+      <button>Save Post</button>
+    </form>
+  </body>
+</html>
