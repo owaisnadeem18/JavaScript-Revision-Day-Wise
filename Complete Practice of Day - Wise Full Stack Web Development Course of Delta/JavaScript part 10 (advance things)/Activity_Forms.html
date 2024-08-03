@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity Forms</title>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <input type="text" id="inp" />
+
+    <script>
+      let inp = document.querySelector("#inp");
+      let box = document.querySelector("#box");
+
+      inp.addEventListener("input", function () {
+        box.innerText = inp.value;
+      });
+    </script>
+  </body>
+</html>
