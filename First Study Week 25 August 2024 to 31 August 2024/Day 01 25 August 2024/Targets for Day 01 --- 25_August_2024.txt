@@ -1,0 +1,7 @@
+Targets & Goals with time bound : 
+
+JavaScript: Completely Revise the concept of Promises in JavaScript plus also learn about API Data Fetching
+
+React JS: Watch Todo List Complete features , explained by sharadha ma'am with practice
+
+NEXT JS: Only practice & understand about The Cards Features of NEXT JS in the office assignment task
